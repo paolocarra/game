@@ -1,12 +1,12 @@
 function talkingHeads() {
     this.quiz = [{mp3: "soundbites/alig.mp3",question: "What is the last name of the interviewer?", speaker: "G"},{mp3:"soundbites/leonard.mp3",question: "From which footballclub this song is the official chant?", speaker:"Ajax"},
     {mp3: "soundbites/test4.mp3",question:"What is the firstname of the tennisplayer?", speaker: "John"},{mp3: "soundbites/test10.mp3",question : "What is the nickname of Elvis", speaker:"King"},
-    {mp3: "soundbites/apocalypsnow.mp3",question : "From which film comes this famous line", speaker:"Apocalypsnow"}, {mp3: "soundbites/nile.mp3",question : "What is the firstname of the famoud guitar player in this song", speaker:"Nile"},
-    {mp3: "soundbites/leo.mp3",question : "What is the firstname of this singer/songwriter", speaker:"Leonard"}, {mp3: "soundbites/iphone1.mp3",question : "What product is he talking about", speaker:"Iphone"},
-    {mp3: "soundbites/yuri.mp3",question : "What is the firstname of the first man in space", speaker:"Yuri"}, {mp3: "soundbites/wayne3.mp3",question : "What is name of the character of ", speaker:"King"}];
+    {mp3: "soundbites/apocalypsnow.mp3",question : "From which film comes this famous line", speaker:"Apocalypsnow"}, {mp3: "soundbites/nile.mp3",question : "What is the firstname of the famous guitar player in this song", speaker:"Nile"},
+    {mp3: "soundbites/leo2.mp3",question : "What is the firstname of this singer/songwriter", speaker:"Leonard"}, {mp3: "soundbites/iphone1.mp3",question : "What product is he talking about", speaker:"Iphone"},
+    {mp3: "soundbites/yuri.mp3",question : "What is the firstname of the first man in space", speaker:"Yuri"}, {mp3: "soundbites/wayne3.mp3",question : "What is the firstname of leading character in Wayns World, easy one...", speaker:"Wayne"}];
     this.currentQuestion;
     this.currentAnswer;
-    this.secretWord = "JAYTELFING";
+    this.secretWord = "JAYWALKING";
     this.goodLetters = [".",".",".",".",".",".",".",".",".","."];
     this.errorsLeft = 3;
     this.questionsAsked = [];
@@ -92,6 +92,7 @@ talkingHeads.prototype.checkAnswer = function(word) {
             
             this.lastIndex = i;
             console.log("Paolo");
+            return;
         }
       }
 
